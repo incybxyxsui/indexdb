@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <form class="" >
+      <!-- <input type="text" name="name" value="" id="name"><br>
+      <input type="text" name="rollno" value="" id="rollno"><br>
+      <input type="text" name="email" value="" id="email"><br>
+      <button type="button" name="button" onclick="getDetails()">SUBMIT</button> -->
+      <div class="mainDiv">
+        <div class="personalDiv">
+          <h3>Personal Details</h3>
+          <input type="text" name="name" value="" id="name" placeholder="Enter Name"><br><br>
+          <input type="text" name="rollno" value="" id="rollno" placeholder="Enter RollNo"><br><br>
+          <input type="text" name="email" value="" id="email" placeholder="Enter Email"><br><br>
+        </div>
+        <h3>Carrier Objective</h3>
+        <select class="co" name="" id="co">
+          <option value="">select</option>
+          <option value="to seak a job">to seak a job</option>
+          <option value="i would be a part of an organization">i would be a part of an organization </option>
+        </select>
+        <h4>Educational Detalis</h4>
+          <div class="eduDiv">
+        <div class="sscDiv">
+        <select class="ssc" name="" id="sscValue">
+          <option value="cbse">cbse</option>
+          <option value="ssc">ssc</option>
+        </select><br><br>
+
+        <input type="radio" name="marks" value="cgpa" id="sscmks">cgpa
+        <input type="radio" name="marks" value="percentage" id="sscmks1">percentage<br><br>
+        percentage:<input type="text" name="percentage" value="" placeholder="percentage" id="sscper"><br><br>
+        year of pass:<input type="text" name="yop" value="" placeholder="yop" id="sscyop"><br><br>
+        </div>
+        <div class="interDiv">
+          <select class="intermediate" name="" id="interValue">
+            <option value="inter">inter</option>
+            <option value="diploma">diploma</option>
+          </select><br>
+          <input type="radio" name="intermarks" value="cgpa" id="intermks">cgpa
+          <input type="radio" name="intermarks" value="percentage" id="intermks1">percentage<br><br>
+          percentage:<input type="text" name="percentage" value="" placeholder="percentage" id="interper"><br><br>
+          year of pass:<input type="text" name="yop" value="" placeholder="yop" id="interyop"><br>
+        </div>
+        <div class="BtechDiv">
+          <!-- <select class="Degree" name="" id="BtechValue">
+            <option value="Btech">btech</option>
+            <option value="Degree">Degree</option>
+          </select><br> -->
+          <select class="BRANCH" name="">
+            <option value="cse">cse</option>
+            <option value="ece">ece</option>
+            <option value="eee">eee</option>
+            <option value="mech">mech</option>
+            <option value="civil">civil</option>
+          </select><br>
+          <input type="radio" name="techmarks" value="cgpa" id="Btechmks">cgpa
+          <input type="radio" name="techmarks" value="percentage" id="Btechmks1">percentage<br><br>
+          percentage:<input type="text" name="percentage" value="" placeholder="percentage" id="Btechper"><br><br>
+          year of pass:<input type="text" name="yop" value="" placeholder="yop" id="Btechyop"><br>
+        </div>
+      </div><br>
+        <button type="button" name="button" onclick="getDetails()">SUBMIT</button>
+    </form>
+  </body>
+  <script type="text/javascript" src="index.js">
+
+  </script>
+</html>
