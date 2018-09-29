@@ -70,6 +70,7 @@ name=document.getElementById('name').value;
    rollno=document.getElementById('rollno').value;
  email=document.getElementById('email').value;
    console.log(name+" "+rollno+" "+email);
+
    if (!window.indexedDB) {
      console.log("indexed db is not working...!");
    }
@@ -79,7 +80,7 @@ name=document.getElementById('name').value;
   }
    request.onupgradeneeded=e=>{
      var dbname=e.target.result;
- dbname.createObjectStore("cse",{keyPath:"name"});
+ dbname.createObjectStore("cse",{keyPath:"roll"});
      console.log("upgraded...!");
 
    }
@@ -92,17 +93,34 @@ name=document.getElementById('name').value;
         "roll":rollno,
         "email":email,
         "co":co,
-        "eduDetails":[
+
+
+        "eduDetails":
+        {
+
           "ssc":[
-          "ssctype":sscValue,
-          "pertype":sscradio,
-          "percentage":sscper,
-          "yearofpass":sscyop
+          sscValue,
+          sscradio,
+          sscper,
+          sscyop
+        ],
+        "inter":[
+          interValue,
+          interradio,
+          interper,
+          interyop
+        ],
+        "Btech":[
+          BtechValue,
+          Btechradio,
+          Btechper,
+          Btechyop
         ]
-      ]
+      }
       }
      );
        console.log("success...!");
    }
-
+localStorage.setItem("roll",rollno);
+window.open("resume.html","_self");
 }

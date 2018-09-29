@@ -1,0 +1,12 @@
+.mainDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.leftDiv{
+  width: 30%;
+  background: green;
+}
+.rightDiv{
+  width: 68%;
+  background: purple;
+}

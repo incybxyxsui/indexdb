@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="index.css">
+    <link rel="manifest" href="favicon518/manifest.json">
   </head>
   <body>
     <form class="" >
@@ -52,7 +53,7 @@
             <option value="Btech">btech</option>
             <option value="Degree">Degree</option>
           </select><br> -->
-          <select class="BRANCH" name="">
+          <select class="BRANCH" name="" id="BtechValue">
             <option value="cse">cse</option>
             <option value="ece">ece</option>
             <option value="eee">eee</option>
@@ -69,6 +70,14 @@
     </form>
   </body>
   <script type="text/javascript" src="index.js">
-
-  </script>
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("sw.js");
+    console.log("serviceWorker register successfully..");
+  }
+  err=>{
+    console.log("error occured in sw");
+  }
+</script>
 </html>
